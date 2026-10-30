@@ -191,7 +191,8 @@ jobs:
       - name: Check out previous release tag
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          ref: v0.4.0
+          repository: astaxie/TokenHub
+          ref: e013705d33ca65ca7d0f11ca1cd255f30a2e73a6 # v0.4.0, peeled upstream tag commit
           path: n1
           persist-credentials: false
 
@@ -300,14 +301,16 @@ jobs:
       - name: Check out previous release tag
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          ref: v0.4.0
+          repository: astaxie/TokenHub
+          ref: e013705d33ca65ca7d0f11ca1cd255f30a2e73a6 # v0.4.0, peeled upstream tag commit
           path: n1
           persist-credentials: false
 
       - name: Check out v0.5.0 release tag
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          ref: v0.5.0
+          repository: astaxie/TokenHub
+          ref: aebf538c55aa04042058b828a36a5960d22ef217 # v0.5.0, peeled upstream tag commit
           path: n15
           persist-credentials: false
 
